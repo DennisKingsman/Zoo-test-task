@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-animals
+      author: Dennis
+      changes:
+        - sql:
+            sql: insert into animal (name, animalType, isPredator) values ('Обезьяна', 'MAMMAL', false)
+        - sql:
+            sql: insert into animal (name, animalType, isPredator) values ('Заяц', 'MAMMAL', false)
+        - sql:
+            sql: insert into animal (name, animalType, isPredator) values ('Орёл', 'BIRD', true)
+        - sql:
+            sql: insert into animal (name, animalType, isPredator) values ('Тигр', 'MAMMAL', true)
+        - sql:
+            sql: insert into animal (name, animalType, isPredator) values ('Лошадь', 'MAMMAL', false)

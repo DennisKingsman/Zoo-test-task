@@ -1,4 +1,4 @@
-package com.testtask.JETLYN.zoopipeline;
+package com.testtask.jetlin.zoopipeline;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

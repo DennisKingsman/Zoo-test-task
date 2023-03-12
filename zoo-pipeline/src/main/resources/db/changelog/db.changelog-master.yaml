@@ -1,0 +1,13 @@
+databaseChangeLog: #параметр в котором находятся миграции
+  - include:
+      file: db/changelog/changeset/create-animal-table.yaml
+  - include:
+      file: db/changelog/changeset/create-foodstuff-table.yaml
+  - include:
+      file: db/changelog/changeset/create-foodRate-table.yaml
+  - include:
+      file: db/changelog/changeset/insert-animal-table.yaml
+  - include:
+      file: db/changelog/changeset/insert-foodstuff-table.yaml
+  - include:
+      file: db/changelog/changeset/insert-foodRate-table.yaml

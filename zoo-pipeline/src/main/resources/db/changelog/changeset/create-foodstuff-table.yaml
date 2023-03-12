@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-foodstuff
+      author: Dennis
+      changes:
+        - createTable:
+            tableName: foodstuff
+            columns:
+              - column:
+                  name: foodstuffId
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: currentQuantity
+                  type: int
+              - column:
+                  name: unit
+                  type: varchar(20)
+              - column:
+                  name: foodstuffType
+                  type: varchar(100)
