@@ -7,31 +7,35 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Foodstuff {
+public class Foodstuff implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "foodstuff_Id")
     private long foodstuffId;
 
-    @Column
+    @Column(name = "name")
     private String name;
 
-    @Column
+    @Column(name = "current_Quantity")
     private Integer currentQuantity;
 
-    @Column
+    @Column(name = "unit")
+    @Enumerated(EnumType.STRING)
     private Unit unit;
 
-    @Column
+    @Column(name = "foodstuff_Type")
+    @Enumerated(EnumType.STRING)
     private FoodstuffType foodstuffType;
 
-    @OneToMany(mappedBy = "foodstuff", fetch = FetchType.LAZY)
-    private List<FoodRate> foodRates;
+//    @OneToMany(mappedBy = "foodstuff", fetch = FetchType.LAZY)
+//    private List<FoodRate> foodRates;
 
 }

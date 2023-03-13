@@ -4,7 +4,7 @@ databaseChangeLog:
       author: Dennis
       changes:
         - createTable:
-            tableName: FoodRate
+            tableName: Food_Rate
             columns:
               - column:
                   name: id
@@ -14,19 +14,19 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
-                  name: animalId
+                  name: animal_Id
                   type: bigint
                   constraints:
                     foreignKeyName: animal_fk
                     referencedTableName: animal
-                    referencedColumnNames: animalId
+                    referencedColumnNames: animal_Id
               - column:
-                  name: foodstuffId
+                  name: foodstuff_Id
                   type: bigint
                   constraints:
                     foreignKeyName: foodstuff_fk
                     referencedTableName: foodstuff
-                    referencedColumnNames: foodstuffId
+                    referencedColumnNames: foodstuff_Id
               - column:
-                  name: quantityPerDay
+                  name: quantity_Per_Day
                   type: int

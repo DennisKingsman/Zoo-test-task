@@ -7,7 +7,7 @@ databaseChangeLog:
             tableName: foodstuff
             columns:
               - column:
-                  name: foodstuffId
+                  name: foodstuff_Id
                   type: bigint
                   autoIncrement: true
                   constraints:
@@ -19,11 +19,11 @@ databaseChangeLog:
                   constraints:
                     nullable: false
               - column:
-                  name: currentQuantity
+                  name: current_Quantity
                   type: int
               - column:
                   name: unit
                   type: varchar(20)
               - column:
-                  name: foodstuffType
+                  name: foodstuff_Type
                   type: varchar(100)

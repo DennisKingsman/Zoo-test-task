@@ -4,16 +4,16 @@ databaseChangeLog:
       author: Dennis
       changes:
         - sql:
-            sql: insert into foodstuff (name, currentQuantity, unit, foodstuffType) values ('Морковь', 25, 'NUM', 'VEGETABLE')
+            sql: insert into foodstuff (name, current_Quantity, unit, foodstuff_Type) values ('Морковь', 25, 'NUM', 'VEGETABLE')
         - sql:
-            sql: insert into foodstuff (name, currentQuantity, unit, foodstuffType) values ('Мясо', 10, 'KG', 'MEAT')
+            sql: insert into foodstuff (name, current_Quantity, unit, foodstuff_Type) values ('Мясо', 10, 'KG', 'MEAT')
         - sql:
-            sql: insert into foodstuff (name, currentQuantity, unit, foodstuffType) values ('Капуста', 50, 'NUM', 'VEGETABLE')
+            sql: insert into foodstuff (name, current_Quantity, unit, foodstuff_Type) values ('Капуста', 50, 'NUM', 'VEGETABLE')
         - sql:
-            sql: insert into foodstuff (name, currentQuantity, unit, foodstuffType) values ('Банан', 30, 'NUM', 'FRUIT')
+            sql: insert into foodstuff (name, current_Quantity, unit, foodstuff_Type) values ('Банан', 30, 'NUM', 'FRUIT')
         - sql:
-            sql: insert into foodstuff (name, currentQuantity, unit, foodstuffType) values ('Зерно', 150, 'KG', 'VEGETABLE')
+            sql: insert into foodstuff (name, current_Quantity, unit, foodstuff_Type) values ('Зерно', 150, 'KG', 'VEGETABLE')
         - sql:
-            sql: insert into foodstuff (name, currentQuantity, unit, foodstuffType) values ('Вода', 1000, 'L', 'LIQUID')
+            sql: insert into foodstuff (name, current_Quantity, unit, foodstuff_Type) values ('Вода', 1000, 'L', 'LIQUID')
         - sql:
-            sql: insert into foodstuff (name, currentQuantity, unit, foodstuffType) values ('Яблоко', 0, 'NUM', 'FRUIT')
+            sql: insert into foodstuff (name, current_Quantity, unit, foodstuff_Type) values ('Яблоко', 0, 'NUM', 'FRUIT')

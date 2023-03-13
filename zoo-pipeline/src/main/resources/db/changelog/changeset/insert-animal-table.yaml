@@ -4,12 +4,12 @@ databaseChangeLog:
       author: Dennis
       changes:
         - sql:
-            sql: insert into animal (name, animalType, isPredator) values ('Обезьяна', 'MAMMAL', false)
+            sql: insert into animal (name, animal_Type, is_Predator) values ('Обезьяна', 'MAMMAL', false)
         - sql:
-            sql: insert into animal (name, animalType, isPredator) values ('Заяц', 'MAMMAL', false)
+            sql: insert into animal (name, animal_Type, is_Predator) values ('Заяц', 'MAMMAL', false)
         - sql:
-            sql: insert into animal (name, animalType, isPredator) values ('Орёл', 'BIRD', true)
+            sql: insert into animal (name, animal_Type, is_Predator) values ('Орёл', 'BIRD', true)
         - sql:
-            sql: insert into animal (name, animalType, isPredator) values ('Тигр', 'MAMMAL', true)
+            sql: insert into animal (name, animal_Type, is_Predator) values ('Тигр', 'MAMMAL', true)
         - sql:
-            sql: insert into animal (name, animalType, isPredator) values ('Лошадь', 'MAMMAL', false)
+            sql: insert into animal (name, animal_Type, is_Predator) values ('Лошадь', 'MAMMAL', false)
